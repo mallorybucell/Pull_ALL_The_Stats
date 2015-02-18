@@ -7,11 +7,9 @@ class Github
   include HTTParty
   base_uri "https://api.github.com"
   headers 'Authorization' => "token #{TOKEN}", "User-Agent" => "classbot"
-  #default_options headers: ...
-
-  #Define Token constant
 
 
+#condense these later in refactor
   def initialize(name)
     @org_name = name
   end
