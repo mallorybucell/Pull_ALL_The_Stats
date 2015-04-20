@@ -30,7 +30,8 @@ puts "Setting up Database. Please wait."
 Stat.clear_table
 
 puts "Getting information..."
-gh.grab_org_members(gh.org_name)
+m = gh.grab_org_members(gh.org_name)
+binding.pry
 gh.grab_usernames(gh.members)
 puts "Organizing information..."
 gh.add_user_contributions(gh.usernames)
